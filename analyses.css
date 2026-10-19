@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#0a192f;
+    padding:20px 80px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.analyse-header{
+    background:linear-gradient(135deg,#0a192f,#1c4c96);
+    color:white;
+    text-align:center;
+    padding:100px 10%;
+}
+
+.analyse-header h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.analyse-header p{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+}
+
+.analyses-container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.analyse-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.analyse-card:hover{
+    transform:translateY(-8px);
+}
+
+.analyse-card h2{
+    color:#0a192f;
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.analyse-card p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.analyse-card a{
+    color:#0077ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#0a192f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}

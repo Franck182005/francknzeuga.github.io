@@ -1,0 +1,127 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #081120;
+    color: white;
+    line-height: 1.7;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(8, 17, 32, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4ea8ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4ea8ff;
+}
+
+/* =====================================================
+   SECTION PARCOURS
+===================================================== */
+
+.parcours {
+    min-height: 100vh;
+
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #081120,
+        #10284b,
+        #16376a
+    );
+}
+
+/* =====================================================
+   CONTENEUR
+===================================================== */
+
+.parcours-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* =====================================================
+   TITRE
+===================================================== */
+
+.parcours-title {
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.parcours-title h2 {
+    font-size: 4rem;
+    color: #4ea8ff;
+
+    margin-bottom: 20px;
+}
+
+.parcours-title p {
+    color: #d3d9e4;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    font-size: 1.2rem;
+}
+
+/* ===================

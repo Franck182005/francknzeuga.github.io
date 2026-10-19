@@ -1,0 +1,510 @@
+/* =====================================================
+   RESET GENERAL
+   Supprime les marges et espacements par défaut
+   appliqués par le navigateur.
+===================================================== */
+
+* {
+    margin: 0;         /* Supprime les marges */
+    padding: 0;        /* Supprime les espacements internes */
+    box-sizing: border-box; /* Inclut padding et border dans la taille */
+}
+
+
+/* =====================================================
+   BODY
+   Définit le style général de la page
+===================================================== */
+
+body {
+    font-family: "Segoe UI", sans-serif; /* Police principale */
+    background: #081120;                 /* Fond bleu nuit */
+    color: white;                        /* Couleur du texte */
+}
+
+
+/* =====================================================
+   HEADER
+   Barre de navigation fixée en haut de l'écran
+===================================================== */
+
+header {
+    position: fixed;  /* Reste visible lors du scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;    /* Passe devant les autres éléments */
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+    display: flex;                 /* Active Flexbox */
+    justify-content: space-between;/* Logo à gauche / menu à droite */
+    align-items: center;           /* Alignement vertical */
+
+    padding: 20px 10%;            /* Espace intérieur */
+
+    background: rgba(8, 17, 32, 0.9); /* Fond semi-transparent */
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    font-size: 28px;     /* Taille du texte */
+    font-weight: bold;   /* Texte gras */
+    color: #4ea8ff;      /* Bleu du site */
+}
+
+
+/* =====================================================
+   LIENS DE NAVIGATION
+===================================================== */
+
+.nav-links {
+    display: flex;       /* Menu horizontal */
+    gap: 25px;           /* Espacement entre liens */
+
+    list-style: none;    /* Supprime les puces */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement */
+
+    transition: 0.3s;      /* Animation douce */
+}
+
+.nav-links a:hover {
+    color: #4ea8ff;        /* Changement de couleur au survol */
+}
+
+
+/* =====================================================
+   HERO SECTION
+   Première section visible du site
+===================================================== */
+
+.hero {
+    min-height: 100vh; /* Occupe toute la hauteur écran */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 120px 10% 50px;
+
+    background: linear-gradient(
+        135deg,
+        #081120,
+        #10284b,
+        #16376a
+    );
+}
+
+/* =====================================================
+   MON PARCOURS
+===================================================== */
+
+.parcours {
+
+    padding: 120px 10%;
+
+    background: #0d1830;
+}
+
+.parcours-title {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.parcours-title h2 {
+
+    font-size: 3rem;
+
+    color: #4ea8ff;
+
+    margin-bottom: 20px;
+}
+
+.parcours-title p {
+
+    color: #d3d9e4;
+
+    font-size: 1.1rem;
+}
+
+.parcours-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.parcours-text {
+
+    flex: 1;
+}
+
+.parcours-text h3 {
+
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+}
+
+.parcours-text p {
+
+    margin-bottom: 25px;
+
+    line-height: 1.9;
+
+    color: #d3d9e4;
+}
+
+.parcours-cards {
+
+    flex: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.parcours-card {
+
+    background: #152342;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.parcours-card:hover {
+
+    transform: translateY(-8px);
+
+    background: #1b305d;
+}
+
+.parcours-card h4 {
+
+    color: #4ea8ff;
+
+    margin-bottom: 15px;
+}
+
+.parcours-card p {
+
+    color: #d3d9e4;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   PARTIE TEXTE
+===================================================== */
+
+.hero-text {
+    max-width: 700px; /* Limite la largeur du texte */
+}
+
+
+/* -------- TITRE PRINCIPAL -------- */
+
+.hero-text h1 {
+    font-size: 4rem; /* Très grand titre */
+
+    line-height: 1.2; /* Hauteur des lignes */
+
+    margin-bottom: 25px;
+}
+
+
+/* -------- SOUS-TITRE -------- */
+
+.hero-text h2 {
+    color: #4ea8ff;
+
+    margin-bottom: 25px;
+}
+
+
+/* -------- PARAGRAPHE -------- */
+
+.hero-text p {
+
+    font-size: 1.1rem;
+
+    line-height: 1.9; /* Rend la lecture confortable */
+
+    color: #d3d9e4;
+
+    margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   BOUTONS
+===================================================== */
+
+.btn,
+.btn-secondary {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    margin-right: 10px;
+
+    transition: 0.3s;
+}
+
+
+/* -------- BOUTON PRINCIPAL -------- */
+
+.btn {
+    background: #2563eb;
+    color: white;
+}
+
+.btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-3px); /* Monte légèrement */
+}
+
+
+/* -------- BOUTON SECONDAIRE -------- */
+
+.btn-secondary {
+
+    border: 2px solid white;
+
+    color: white;
+}
+
+.btn-secondary:hover {
+
+    background: white;
+
+    color: #081120;
+}
+
+
+/* =====================================================
+   CARTE PHOTO
+===================================================== */
+
+.hero-image {
+
+    width: 400px;
+    height: 520px;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+    transition: 0.4s;
+}
+
+
+/* Effet au survol */
+
+.hero-image:hover {
+
+    transform: translateY(-10px);
+}
+
+
+/* Image à l'intérieur de la carte */
+
+.hero-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* Garde les proportions */
+
+    border-radius: 20px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #050b16;
+
+    margin-top: 100px;
+
+    padding-top: 60px;
+}
+
+
+/* Conteneur principal du footer */
+
+.footer-container {
+
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Colonnes */
+
+.footer-about,
+.footer-links,
+.footer-contact {
+
+    flex: 1;
+
+    min-width: 250px;
+}
+
+
+/* Titres des colonnes */
+
+.footer-container h3 {
+
+    color: #4ea8ff;
+
+    margin-bottom: 20px;
+}
+
+
+/* Texte du footer */
+
+.footer-container p,
+.footer-container li {
+
+    color: #cfd8e3;
+
+    line-height: 1.8;
+}
+
+
+/* Liste des liens */
+
+.footer-links ul {
+
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+/* Liens */
+
+.footer-links a {
+
+    color: #cfd8e3;
+
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+
+    color: #4ea8ff;
+}
+
+
+/* Bas du footer */
+
+.footer-bottom {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom p {
+
+    color: #aab4c3;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   Adaptation pour mobile et tablette
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding-top: 140px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 2.8rem;
+    }
+
+    .hero-image {
+
+        width: 300px;
+
+        height: 400px;
+    }
+
+    .nav-links {
+
+        display: none;
+    }
+}
